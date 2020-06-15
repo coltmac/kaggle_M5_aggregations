@@ -1,0 +1,10 @@
+.idea/*
+venv/
+submissions/
+initial_data_exploration.py
+data/aggregations/*.csv
+data/calendar.csv
+data/sales_train_validation.csv
+data/sample_submission.csv
+data/sell_prices.csv
+__pycache__
