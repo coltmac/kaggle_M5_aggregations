@@ -1,5 +1,8 @@
 # M5 Competition: Aggregation Levels
 
+download the data from the competition and place it in the data folder.
+(https://www.kaggle.com/c/m5-forecasting-accuracy/data)
+
 Creates the 12 aggregations levels described in the M5 guide.
 
 
