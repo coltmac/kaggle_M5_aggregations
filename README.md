@@ -1,13 +1,12 @@
 # M5 Competition: Aggregation Levels
 
-download the data from the competition and place it in the data folder.
-(https://www.kaggle.com/c/m5-forecasting-accuracy/data)
+### Creates the 12 aggregations levels described in the M5 guide, and saves a CSV for each of them, so this doesn't need to run twice.  (As much information as possible, given the aggregation, is kept in each dataframe.)
 
+##### First: download the data from the competition and place it in the data folder. (https://www.kaggle.com/c/m5-forecasting-accuracy/data)
 
+##### Then run `aggregations_exploration.py`
 
-Creates the 12 aggregations levels described in the M5 guide,
-and saves a CSV for each of them, so this doesn't need to run twice.
-
+Note:
 Runs in 10-11 minutes on my machine (CPU: i7, RAM: 16GB, Windows)
 
 (You might want to close Chrome and other RAM hogs for this one... )
@@ -31,4 +30,3 @@ Aggregations created:
 |     12                 |     Unit sales of product x,   aggregated for each store                      |     30,490              |
 |     Total              |                                                                               |     42,840              |
 
-As much information as possible, given the aggregation, is kept in each dataframe.
