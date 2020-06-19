@@ -8,8 +8,12 @@ download the data from the competition and place it in the data folder.
 Creates the 12 aggregations levels described in the M5 guide,
 and saves a CSV for each of them, so this doesn't need to run twice.
 
+Runs in 10-11 minutes on my machine (CPU: i7, RAM: 16GB, Windows)
+
 (You might want to close Chrome and other RAM hogs for this one... )
 
+
+Aggregations created:
 
 |     Level        id    |     Aggregation   Level                                                       |     Number of series    |
 |------------------------|-------------------------------------------------------------------------------|-------------------------|
