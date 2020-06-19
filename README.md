@@ -3,7 +3,12 @@
 download the data from the competition and place it in the data folder.
 (https://www.kaggle.com/c/m5-forecasting-accuracy/data)
 
-Creates the 12 aggregations levels described in the M5 guide.
+
+
+Creates the 12 aggregations levels described in the M5 guide,
+and saves a CSV for each of them, so this doesn't need to run twice.
+
+(You might want to close Chrome and other RAM hogs for this one... )
 
 
 |     Level        id    |     Aggregation   Level                                                       |     Number of series    |

@@ -28,7 +28,7 @@ agg_3 = make_agg_3(agg_8)
 agg_2 = make_agg_2(agg_6)
 agg_1 = make_agg_1(agg_2)
 
-print('aggregations 1-12 made: ', process.memory_info().rss / 1_000_000)
+print('aggregations 1-12 made. Memory: ', process.memory_info().rss / 1_000_000)
 
 
 """ as a convenience, this step saves the aggregations locally so this doesn't need to run again. """

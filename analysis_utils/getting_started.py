@@ -13,6 +13,7 @@ from analysis_utils.pull_data import pull_data
 calendar_df, sales_train_validation_df, sample_submission_df, sell_prices_df = pull_data()
 
 def make_dataframe():
+    print('started joining all the data in make_dataframe()')
     # Wide format dataset
     df_wide_train = sales_train_validation_df.drop(
         columns=["item_id", "dept_id", "cat_id", "state_id", "store_id", "id"]).T

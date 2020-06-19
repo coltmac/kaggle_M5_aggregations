@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 def pull_data():
-    if Path(os.getcwd()).name == 'm5-forecasting-accuracy':
+    if Path(os.getcwd()).name == 'm5-forecasting-accuracy' or Path(os.getcwd()).name == 'kaggle_M5_aggregations':
         DATA_DIR = Path(os.getcwd())
     else:
         DATA_DIR = Path(os.getcwd()).parent
