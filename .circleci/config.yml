@@ -11,7 +11,6 @@ workflows:
       - build-and-test
       - build-and-test-docker
 
-
 jobs:
   build-and-test:
     docker:
@@ -32,7 +31,7 @@ jobs:
       - setup_remote_docker
       - run:
           name: Build docker image
-          command: docker build -t kaggle_M5_aggregations . 
+          command: docker build -t kaggle_m5_aggregations . 
       - run:
           name: Run tests inside docker container
-          command: docker run -it kaggle_M5_aggregations pytest
+          command: docker run -it kaggle_m5_aggregations pytest
