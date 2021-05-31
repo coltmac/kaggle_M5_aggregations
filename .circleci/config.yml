@@ -9,6 +9,7 @@ workflows:
     # For more details on extending your workflow, see the configuration docs: https://circleci.com/docs/2.0/configuration-reference/#workflows 
     jobs:
       - build-and-test
+      - build-and-test-docker
 
 
 jobs:
@@ -17,11 +18,17 @@ jobs:
       - image: cimg/python:3.8
     steps:
       - checkout
-      - setup_remote_docker
       - python/install-packages:
           pkg-manager: pip
           name: Run tests
           command: pytest
+
+  build-and-test-docker:
+    docker:
+      - image: cimg/python:3.8
+    steps:
+      - checkout
+      - setup_remote_docker
       - run:
           name: Build docker image
           command: docker build -t kaggle_M5_aggregations . 
